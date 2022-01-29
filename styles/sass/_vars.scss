@@ -1,0 +1,260 @@
+// Extends
+%center-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// ---------- Mixin Breakpoints *(media queries) ---------- //
+
+$phone-m: 375px;
+$phone-l: 411px;
+$landscape: 480px;
+$tablet-s: 720px;
+$tablet-l: 1024px;
+$desktop-s: 1280px;
+$desktop-l: 1440px;
+$desktop-xl: 1600px;
+
+// ---------- Mixin ---------- //
+
+@mixin font-text($size: false, $lh: false, $color: false, $txt-transf: false, $ls: false) {
+  font-family: var(--main-font-regular-text), Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+
+  @if $colocolor {
+    line-height: $lh;
+  }
+
+  @if $txt-transf {
+    text-transform: $txt-transf;
+  }
+
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+@mixin font-text-it($size: false, $lh: false, $color: false, $txt-transf: false, $ls: false) {
+  font-family: var(--main-font-regular-text-it), Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+
+  @if $colocolor {
+    line-height: $lh;
+  }
+
+  @if $txt-transf {
+    text-transform: $txt-transf;
+  }
+
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+@mixin font-main($size: false, $lh: false, $color: false, $txt-transf: false, $ls: false) {
+  font-family: var(--main-font-regular), Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+
+  @if $colocolor {
+    line-height: $lh;
+  }
+
+  @if $txt-transf {
+    text-transform: $txt-transf;
+  }
+
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+@mixin font-main-bold($size: false, $lh: false, $color: false, $txt-transf: false, $ls: false) {
+  font-family: var(--main-font-bold), Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+
+  @if $color {
+    color: $color;
+  }
+
+  @if $txt-transf {
+    text-transform: $txt-transf;
+  }
+
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+@mixin font-sans($size: false, $lh: false, $color: false, $txt-transf: false, $ls: false) {
+  font-family: var(--secondary-font-regular), Arial, Helvetica, sans-serif;
+  font-weight: 400;
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+
+  @if $color {
+    color: $color;
+  }
+
+  @if $txt-transf {
+    text-transform: $txt-transf;
+  }
+
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+@mixin font-sans-bold($size: false, $lh: false, $color: false, $txt-transf: false, $ls: false) {
+  font-family: var(--secondary-font-bold), Arial, Helvetica, sans-serif;
+  font-weight: 400;
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+
+  @if $color {
+    color: $color;
+  }
+
+  @if $txt-transf {
+    text-transform: $txt-transf;
+  }
+
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+@mixin center($maxwidth: 100%, $center: 100%) {
+  max-width: $maxwidth;
+  width: $center;
+
+  margin: {
+    left: auto;
+    top: 0;
+    right: auto;
+    bottom: 0;
+  }
+}
+
+@mixin rounded($property) {
+  border-radius: $property;
+}
+
+@mixin pseudo($content: "", $display: block, $pos: absolute) {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin responsive-ratio($x, $y, $pseudo: false) {
+  $padding: unquote(($y / $x) * 100 + "%");
+
+  @if $pseudo {
+    &:before {
+      @include pseudo($pos: relative);
+      width: 100%;
+      padding-top: $padding;
+    }
+  } @else {
+    padding-top: $padding;
+  }
+}
+
+// MODIFICADORES
+
+.--left {
+  text-align: left;
+}
+
+.--sticky {
+  position: sticky !important;
+  top: 0;
+}
+
+.--mobile {
+  display: block !important;
+  pointer-events: inherit;
+  opacity: 1;
+
+  // 768
+  @media (min-width: $tablet-l) {
+    display: none !important;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+
+.--tablet {
+  display: none !important;
+  pointer-events: none;
+  opacity: 0;
+
+  @media (min-width: $tablet-l) {
+    display: block !important;
+    pointer-events: inherit;
+    opacity: 1;
+  }
+}
+
+.--desktop {
+  display: none !important;
+  pointer-events: none;
+  opacity: 0;
+
+  @media (min-width: $tablet-l) {
+    display: block !important;
+    pointer-events: inherit;
+    opacity: 1;
+  }
+}
+
+.no--desktop {
+  @media (min-width: 1024px) {
+    display: none !important;
+  }
+}

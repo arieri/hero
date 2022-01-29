@@ -1,0 +1,56 @@
+:root {
+  --main-color: #cc001b;
+  --main-white: #fff;
+  --main-color-555: #555;
+  --main-color-C1C1C1: #c1c1c1;
+  --main-color-F8F5F0: #f8f5f0;
+  --main-color-191919: #191919;
+  --main-color-333333: #333;
+  --main-color-888888: #888;
+  --main-color-3B575D: #3b575d;
+  --main-color-FDE979: #fde979;
+  --main-color-FF9642: #ff9642;
+  --main-color-FFC036: #ffc036;
+  --main-color-D1D1D1: #d1d1d1;
+  --main-color-gold: #f2dece;
+  --main-color-gold-red: #be3a67;
+  --main-color-ccc: #ccc;
+  --main-color-green: #24938e;
+  --error-color-EBEFF1: #ebeff1;
+  --error-color-666: #666;
+  --error-color-444: #444;
+  --secondary-font-regular: "Velino-Sans-Book", Arial, Helvetica, sans-serif;
+  --secondary-font-bold: "Velino-Sans-Bold", Arial, Helvetica, sans-serif;
+  --main-font-regular: "Velino-Headline-Book", Georgia, "Times New Roman", Times, serif;
+  --main-font-bold: "Velino-Headline-Bold", Georgia, "Times New Roman", Times, serif;
+  --main-font-medium: "Velino-Headline-Medium", Georgia, "Times New Roman", Times, serif;
+  --main-font-regular-text: "VelinoText-Book", Georgia, "Times New Roman", Times, serif;
+  --main-font-regular-text-it: "VelinoText-BookItalic", Georgia, "Times New Roman", Times, serif;
+  --rec-color-7F7F7F: #7f7f7f;
+  --rec-color-999: #999;
+  --rec-color-C9C9C9: #c9c9c9;
+  --rec-color-EBEBEB: #ebebeb;
+  --rec-color-190909: #190909;
+  --rec-color-fedb34: #fedb34;
+  --rec-color-f4f4f4: #f4f4f4;
+  --rec-color-000: #000;
+  --rec-color-FEDA31: #feda31;
+  --rec-color-FCEA2E: #fcea2e;
+}
+
+body {
+  padding: 0px;
+  margin: 0; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.spacer {
+  height: 90vh;
+  width: 90vw;
+  background-color: #fff;
+  border: 1px dashed #ccc;
+  margin: 10vh auto;
+  max-width: 1256px;
+}

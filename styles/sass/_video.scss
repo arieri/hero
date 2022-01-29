@@ -1,0 +1,51 @@
+.hero__genoa {
+  width: 100%;
+
+  @media (min-width: 720px) {
+    pointer-events: none;
+  }
+
+  .genoa-spinner {
+    z-index: -1;
+    opacity: 0;
+  }
+
+  genoa-player {
+    .vid-list-container {
+      display: none;
+    }
+  } 
+}
+
+// GENOA
+.hero {
+  .hero__genoa #share-button,
+  .hero__genoa .vjs-big-play-button,
+  .hero__genoa .vjs-control-bar,
+  .hero__genoa .vjs-picture-in-picture-control {
+    display: none !important;
+  }
+
+  .hero__genoa .vjs-has-started .vjs-poster {
+    display: block !important;
+    pointer-events: none;
+    opacity: 0;
+    transition: .5s;
+  }
+
+  .hero__genoa .vjs-poster {
+    transition: .5s;
+    background-size: cover;
+  }
+
+  .hero__genoa>div,
+  .hero__genoa .vjs-fluid,
+  .hero__genoa .video-inner-container {
+    height: 100% !important;
+  }
+
+  .genoa-spinner {
+    z-index: -1;
+    opacity: 0;
+  }
+} 
