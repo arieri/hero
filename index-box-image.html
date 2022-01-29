@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clarin</title>
+
+  <!-- Fonts importadas como en el template de Nota (Enero 2021) -->
+  <link importance="high" href="https://www.clarin.com/commons/bundles/clarinsite/fonts-v2/Velino-Sans-Bold.woff2"
+    as="font" type="font/woff2" crossorigin>
+  <link importance="high" href="https://www.clarin.com/commons/bundles/clarinsite/fonts-v2/Velino-Sans-Book.woff2"
+    as="font" type="font/woff2" crossorigin>
+  <link importance="high" href="https://www.clarin.com/commons/bundles/clarinsite/fonts-v2/VelinoHeadline-Bold.woff2"
+    as="font" type="font/woff2" crossorigin>
+  <link importance="high" href="https://www.clarin.com/commons/bundles/clarinsite/fonts-v2/VelinoHeadline-Book.woff2"
+    as="font" type="font/woff2" crossorigin>
+  <link importance="high" href="https://www.clarin.com/commons/bundles/clarinsite/fonts-v2/VelinoText-Book.woff2"
+    as="font" type="font/woff2" crossorigin>
+
+  <!-- Estilos solo para la demo, acá estan las variables :root de la Nota (Enero 2021) -->
+  <link href="styles/demo/demo.min.css" type="text/css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://www.clarin.com/static/CLAClarin/css/comprimido-home/comprimido-home.css">
+
+  <!-- Hojas CSS de la Nota (Enero 2021) para testear superposiciones -->
+  <link href="https://www.clarin.com/contents/news/css/tags.css" type="text/css" rel="preload" />
+  <link href="https://www.clarin.com/contents/news/css/newsletter.css" type="text/css" rel="preload" />
+  <link href="https://www.clarin.com/contents/news/css/modalgallery.css" type="text/css" rel="preload" />
+  <link href="https://www.clarin.com/commons/css/magnific-popup.css" type="text/css" rel="preload" />
+  <link href="https://www.clarin.com/contents/news/css/genoa.css" type="text/css" rel="preload" />
+  <link href="https://www.clarin.com/commons/css/footer.css" type="text/css" rel="stylesheet" />
+  <link href="https://www.clarin.com/contents/news/css/image.css" type="text/css" rel="stylesheet" />
+
+  <link href="https://www.clarin.com/contents/news/css/news.css" type="text/css" rel="stylesheet" />
+  <link href="https://www.clarin.com/contents/news/css/news.mega.css" type="text/css" rel="stylesheet" />
+
+  <!-- JS Genoa -->
+  <script src="https://player.vodgc.net/dist/V3/genoa-player.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <div class="sp__Especial htmlLibre">
+    <div class="embed-responsive-c">
+
+      <!-- Start -->
+
+      <div class="hero hero-box">
+        <div class="hero__wrapper">
+          <div class="hero__data">
+            <p class="hero__volanta">Especial Clarín</p>
+            <h1 class="hero__title">Mundo carnicería: el corte premium y los 10 secretos de un negocio que se reinventa
+            </h1>
+          </div>
+        </div>
+        <div class="hero__media">
+          <picture>
+            <source media="(min-width:480px)" srcset="assets/hero-landscape.png">
+            <img src="assets/hero-portrait.png" alt="Clarín">
+          </picture>
+        </div>
+      </div>
+      <script src="js/hero-videoloop.js"></script>
+      <link href="hero.min.css" type="text/css" rel="stylesheet" />
+
+      <!-- End -->
+      <div class="spacer"></div>
+
+    </div>
+  </div>
+
+
+  <style>
+    ul#elements li {
+      list-style: none;
+      position: absolute;
+      -webkit-transition: .1s;
+      transition: .1s
+    }
+
+    li:nth-child(n+1) {
+      opacity: 1;
+      left: 57vw;
+      top: 45vh;
+      font-size: 31px;
+      -webkit-animation-name: animate1;
+      -webkit-animation-duration: 1.8s;
+      animation-name: animate1;
+      animation-duration: 1.8s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+2) {
+      opacity: .4;
+      left: 43vw;
+      top: 64vh;
+      font-size: 17px;
+      -webkit-animation-name: animate2;
+      -webkit-animation-duration: 3.6s;
+      animation-name: animate2;
+      animation-duration: 3.6s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+3) {
+      opacity: .4;
+      left: 62vw;
+      top: 30vh;
+      font-size: 25px;
+      -webkit-animation-name: animate3;
+      -webkit-animation-duration: 5.4s;
+      animation-name: animate3;
+      animation-duration: 5.4s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+4) {
+      opacity: .8;
+      left: 47vw;
+      top: 43vh;
+      font-size: 20px;
+      -webkit-animation-name: animate4;
+      -webkit-animation-duration: 7.2s;
+      animation-name: animate4;
+      animation-duration: 7.2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+5) {
+      opacity: .8;
+      left: 37vw;
+      top: 31vh;
+      font-size: 27px;
+      -webkit-animation-name: animate5;
+      -webkit-animation-duration: 9s;
+      animation-name: animate5;
+      animation-duration: 9s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+6) {
+      opacity: .6;
+      left: 42vw;
+      top: 50vh;
+      font-size: 28px;
+      -webkit-animation-name: animate6;
+      -webkit-animation-duration: 10.8s;
+      animation-name: animate6;
+      animation-duration: 10.8s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+7) {
+      opacity: .8;
+      left: 62vw;
+      top: 28vh;
+      font-size: 31px;
+      -webkit-animation-name: animate7;
+      -webkit-animation-duration: 12.6s;
+      animation-name: animate7;
+      animation-duration: 12.6s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+8) {
+      opacity: 1;
+      left: 47vw;
+      top: 66vh;
+      font-size: 26px;
+      -webkit-animation-name: animate8;
+      -webkit-animation-duration: 14.4s;
+      animation-name: animate8;
+      animation-duration: 14.4s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+9) {
+      opacity: 1;
+      left: 70vw;
+      top: 65vh;
+      font-size: 27px;
+      -webkit-animation-name: animate9;
+      -webkit-animation-duration: 16.2s;
+      animation-name: animate9;
+      animation-duration: 16.2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+10) {
+      opacity: .4;
+      left: 42vw;
+      top: 57vh;
+      font-size: 27px;
+      -webkit-animation-name: animate10;
+      -webkit-animation-duration: 18s;
+      animation-name: animate10;
+      animation-duration: 18s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+11) {
+      opacity: .4;
+      left: 40vw;
+      top: 42vh;
+      font-size: 30px;
+      -webkit-animation-name: animate11;
+      -webkit-animation-duration: 19.8s;
+      animation-name: animate11;
+      animation-duration: 19.8s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+12) {
+      opacity: .6;
+      left: 46vw;
+      top: 45vh;
+      font-size: 23px;
+      -webkit-animation-name: animate12;
+      -webkit-animation-duration: 21.6s;
+      animation-name: animate12;
+      animation-duration: 21.6s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+13) {
+      opacity: .8;
+      left: 66vw;
+      top: 28vh;
+      font-size: 19px;
+      -webkit-animation-name: animate13;
+      -webkit-animation-duration: 23.4s;
+      animation-name: animate13;
+      animation-duration: 23.4s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+
+    li:nth-child(n+14) {
+      opacity: 1;
+      left: 70vw;
+      top: 39vh;
+      font-size: 28px;
+      -webkit-animation-name: animate14;
+      -webkit-animation-duration: 25.2s;
+      animation-name: animate14;
+      animation-duration: 25.2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite
+    }
+  </style>
+</body>
+
+</html>
